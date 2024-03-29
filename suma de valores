@@ -1,0 +1,12 @@
+def sumar_lista(lista_numeros):
+    return sum(lista_numeros)
+
+//ingresar números separados por comas
+numeros_usuario = input("Ingresa una lista de números separados por comas: ")
+
+//Convertir la entrada en una lista de enteros
+lista_numeros = [int(numero) for numero in numeros_usuario.split(',')]
+
+//llamar a función y mostrar resultado 
+print("La suma de la lista es:", sumar_lista(lista_numeros))
+
